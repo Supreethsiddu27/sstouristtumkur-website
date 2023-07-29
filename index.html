@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+
+    <title>SS Tourist</title>
+    <link
+      rel="icon"
+      href="image/ss-logo.png"
+      style="border-radius: 10px"
+      type="image"
+      sizes="16x16"
+    />
+
+    <!------ Include the above in your HEAD tag ---------->
+
+    <style>
+      /*search box css start here*/
+
+      ul.b {
+        list-style-type: square;
+      }
+
+      .search-sec {
+        padding: 2rem;
+      }
+      .search-slt {
+        display: block;
+        width: 100%;
+        font-size: 0.875rem;
+        line-height: 1.5;
+        color: #5c5558;
+        background-color: #fff;
+        background-image: none;
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 0;
+      }
+      .wrn-btn {
+        width: 100%;
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: capitalize;
+      }
+      @media (min-width: 992px) {
+        .search-sec {
+          position: relative;
+          top: -114px;
+          background: #1a4668;
+        }
+        
+      }
+
+      @media (max-width: 992px) {
+        .search-sec {
+          background: #1a4668;
+        }
+        .gap{
+            margin-top: 20px;
+        }
+      }
+
+      .context-dark,
+      .bg-gray-dark,
+      .bg-primary {
+        color: rgba(255, 255, 255, 0.8);
+      }
+
+      .footer-classic a,
+      .footer-classic a:focus,
+      .footer-classic a:active {
+        color: #ffffff;
+      }
+      .nav-list li {
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+
+      .nav-list li a:hover:before {
+        margin-left: 0;
+        opacity: 1;
+        visibility: visible;
+      }
+
+      ul,
+      ol {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .social-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 23px;
+        font: 900 13px/1 "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, "Helvetica Neue", Arial, sans-serif;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.5);
+      }
+      .social-container .col {
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      .nav-list li a:before {
+        content: "\f14f";
+        font: 400 21px/1 "Material Design Icons";
+        color: #4d6de6;
+        display: inline-block;
+        vertical-align: baseline;
+        margin-left: -28px;
+        margin-right: 7px;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.22s ease;
+      }
+    </style>
+  </head>
+
+  <body style="background-color: rgb(240, 240, 240)">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light" data-toggle="collapse" data-target=".navbar-collapse">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand" href="#"
+          ><h3
+            style="
+              color: #1a4668;
+              font-family: ew Century Schoolbook, TeX Gyre Schola, serif;
+              font-size: 34px;
+              text-align: left;
+            "
+          >
+            <i><b>SS Tourist</b></i>
+            <p
+              style="
+                color: rgb(128, 128, 128);
+                font-size: 20px;
+                font-family: Chaparral Pro Light;
+                text-align: left;
+              "
+            >
+              We Provide Best Transportation Service
+            </p>
+          </h3>
+        </a>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              ><span style="font-size: 18px; color: #1a4668"
+                ><b>Home</b></span
+              ></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about_us"
+              ><span style="font-size: 18px; color: #1a4668"
+                ><b>About Us</b></span
+              ></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery"
+              ><span style="font-size: 18px; color: #1a4668"
+                ><b>Gallery</b></span
+              ></a
+            >
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#faq"
+              ><span style="font-size: 18px; color: #1a4668"
+                ><b>FAQ</b></span
+              ></a
+            >
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="#contact_us"
+              ><span style="font-size: 18px; color: #1a4668"
+                ><b>Contact Us</b></span
+              ></a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container" style="padding-top: 25px; padding-bottom: 10px">
+      <div class="center">
+        <h1
+          class="text-center"
+          style="
+            color: #1a4668;
+            font-family: ew Century Schoolbook, TeX Gyre Schola, serif;
+            font-size: 45px;
+          "
+        >
+          <i>
+            <span
+              style="
+                font-family: 'Times New Roman', Times, serif !important;
+                color: rgb(83, 83, 83);
+              "
+              >Welcome to</span
+            ><b> SS Tourist & Transport Contractors</b></i
+          >
+          <p
+            class="text-center"
+            style="
+              color: rgb(128, 128, 128);
+              font-size: 20px;
+              font-family: Chaparral Pro Light;
+            "
+          >
+            We Provide Best Transportation Service
+          </p>
+        </h1>
+      </div>
+    </div>
+
+    <section style="padding-bottom: 10px">
+      <div
+        id="carouselExampleFade"
+        class="carousel slide carousel-fade"
+        data-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="image/bus.png" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="image/bus.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="image/car.jpg" class="d-block w-100" alt="..." />
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleFade"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleFade"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
+
+
+    <div style="background-color: #fff; padding-top: 65px; padding-bottom: 65px;">
+        <div class="container center">
+            <h3 style="text-align: center; font-style: italic; color: #1a4668">
+                Known for Punctual Service, Safety & comfortable journey
+            </h3>
+            <br /><br />
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="card border-info gap" style="height: 18rem;"> 
+                        <div style="width: 150px; padding-top: 20px;" class="container">
+                            <img
+                            class="card-img-top"
+                            src="image/network.png"
+                            alt="Card image cap"
+                        />
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Huge network of Agents</h5>
+                            <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card border-danger gap" style="height: 18rem;">
+                        <div style="width: 150px; padding-top: 20px;" class="container">
+                            <img
+                            class="card-img-top"
+                            src="image/management.png"
+                            alt="Card image cap"
+                          />
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Well known for time management</h5>
+                            <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card border-success gap" style="height: 18rem;">
+                        <div style="width: 150px; padding-top: 20px;" class="container">
+                            <img
+                            class="card-img-top"
+                            src="image/safety.png"
+                            alt="Card image cap"
+                          />
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">All the necessary measures taken for safety of passengers & their belongings</h5>
+                            <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card border-warning gap" style="height: 18rem;">
+                        <div style="width: 150px; padding-top: 20px;" class="container">
+                            <img
+                            class="card-img-top"
+                            src="image/24x7.webp"
+                            alt="Card image cap"
+                          />
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">24x7 Customer Care for your service</h5>
+                            <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="about_us"></div>
+    <br /><br /><br /><br /><br />
+
+    <div class="container">
+      <div class="center">
+        <h3 style="text-align: center; font-style: italic; color: #1a4668">
+          ABOUT US
+        </h3>
+        <p style="text-align: center; font-size: 20px; color: #5c5558">
+          <span style="color: rgb(233, 65, 14)">
+            <b>S.S.Tourist And Transport Contractors</b></span
+          >
+          is a well established travel/transport company. we have been offering
+          wide range of services in the Corporation, industries, Institutions
+          etc from the past 40+years. We are providing quality transport
+          services to several industries and Institutions. We have vehicles with
+          different models and seating capacity where we are able to provide
+          transport facility according to the client's requirements. Presently
+          we provide transport services to the following companies.
+          <ul class="b" style="margin: 25px; font-size: 20px; color: #5c5558">
+            <li>TDPS ( T D Power systems Pvt Ltd. Dobbaspet ) since 2010.</li>
+            <li>Triveni Aeronautics Pvt Ltd, Tumkur.</li>
+            <li>Karmobiles , Hirehalli.</li>
+            <li>Siddaganga Institute of Technology, Tumkur.</li>
+            <li>
+              Incometax Department, Tumkur.
+            </li>
+          </ul>
+        </p>
+      </div>
+    </div>
+
+    <div id="gallery"></div>
+    <br /><br /><br /><br /><br />
+
+    <div style="background-color: white; padding: 40px">
+      <div class="container">
+        <h3
+          class="center"
+          style="text-align: center; font-style: italic; color: #1a4668"
+        >
+          GALLERY
+        </h3>
+        <br />
+        <div class="card-deck">
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="image/bus-g1.jpg"
+              alt="Card image cap"
+            />
+          </div>
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="image/bus-g6.jpg"
+              alt="Card image cap"
+            />
+          </div>
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="image/bus-g3.jpg"
+              alt="Card image cap"
+            />
+          </div>
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="image/bus-g5.jpg"
+              alt="Card image cap"
+            />
+          </div>
+        </div>
+        <br /><br />
+        <div class="card-deck">
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="image/car-g1.jfif"
+              alt="Card image cap"
+            />
+          </div>
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="image/car-g2.jpg"
+              alt="Card image cap"
+            />
+          </div>
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="image/bus-g10.jfif"
+              alt="Card image cap"
+            />
+          </div>
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="image/car-g4.jpg"
+              alt="Card image cap"
+            />
+          </div>
+        </div>
+        <br />
+      </div>
+    </div>
+
+    <!-- <div id="faq"></div>
+    <br /><br /><br /><br /><br /> -->
+
+    <!-- <div class="container">
+      <h3
+        class="center"
+        style="text-align: center; font-style: italic; color: #1a4668"
+      >
+        FAQ
+      </h3>
+      <br />
+      <div id="accordion">
+        <div class="card">
+          <div
+            class="card-header"
+            id="headingOne"
+            style="background-color: #1a4668"
+          >
+            <h5 class="mb-0">
+              <button
+                class="btn btn-link"
+                data-toggle="collapse"
+                data-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                <span style="color: white">Question 1</span>
+              </button>
+            </h5>
+          </div>
+
+          <div
+            id="collapseOne"
+            class="collapse"
+            aria-labelledby="headingOne"
+            data-parent="#accordion"
+          >
+            <div class="card-body">
+              <p style="color: #5c5558">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life
+                accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                non cupidatat skateboard dolor brunch. Food truck quinoa
+                nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                excepteur butcher vice lomo. Leggings occaecat craft beer
+                farm-to-table, raw denim aesthetic synth nesciunt you probably
+                haven't heard of them accusamus labore sustainable VHS.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div
+            class="card-header"
+            id="headingTwo"
+            style="background-color: #1a4668"
+          >
+            <h5 class="mb-0">
+              <button
+                class="btn btn-link collapsed"
+                data-toggle="collapse"
+                data-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                <span style="color: white">Question 2</span>
+              </button>
+            </h5>
+          </div>
+          <div
+            id="collapseTwo"
+            class="collapse"
+            aria-labelledby="headingTwo"
+            data-parent="#accordion"
+          >
+            <div class="card-body">
+              <p style="color: #5c5558">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life
+                accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                non cupidatat skateboard dolor brunch. Food truck quinoa
+                nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                excepteur butcher vice lomo. Leggings occaecat craft beer
+                farm-to-table, raw denim aesthetic synth nesciunt you probably
+                haven't heard of them accusamus labore sustainable VHS.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div
+            class="card-header"
+            id="headingThree"
+            style="background-color: #1a4668"
+          >
+            <h5 class="mb-0">
+              <button
+                class="btn btn-link collapsed"
+                data-toggle="collapse"
+                data-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                <span style="color: white">Question 3</span>
+              </button>
+            </h5>
+          </div>
+          <div
+            id="collapseThree"
+            class="collapse"
+            aria-labelledby="headingThree"
+            data-parent="#accordion"
+          >
+            <div class="card-body">
+              <p style="color: #5c5558">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life
+                accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                non cupidatat skateboard dolor brunch. Food truck quinoa
+                nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                excepteur butcher vice lomo. Leggings occaecat craft beer
+                farm-to-table, raw denim aesthetic synth nesciunt you probably
+                haven't heard of them accusamus labore sustainable VHS.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <div id="contact_us"></div>
+    <!-- <br /><br /><br /><br /><br /> -->
+
+    <footer
+      class="section footer-classic context-dark bg-image"
+      style="background: #1a4668; margin-top: 20px"
+    >
+      <div class="container" style="padding-top: 30px; padding-bottom: 30px">
+        <h3
+          class="center"
+          style="text-align: center; font-style: italic; color: white"
+        >
+          CONTACT US
+        </h3>
+        <br /><br />
+        <div class="row row-30">
+          <div class="col-md-4 col-xl-4">
+            <div class="pr-xl-4">
+                <!-- <a href="https://www.instagram.com/sstourist_transport_contractor/">
+              <img
+                class="brand-logo-light"
+                src="image/instagram.jpeg"
+                alt=""
+                width="220"
+                height="200"
+                style="border-radius: 10px"
+              />
+            </a>
+              <br /><br /> -->
+              <dl class="contact-list">
+                <dt><h5>Address:</h5></dt>
+                <dd>S.S.Tourist And Transport Contractors, 		
+                  #1580, Beside Shivashakti Electricals, 		
+                  Vivekanada Road, Tumkur - 572101.</dd>
+              </dl>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <h5>Contacts</h5>
+
+            <dl class="contact-list">
+              <dt>Phone No:</dt>
+              <dd>
+                <a href="tel:7411505030"><i class="fa fa-phone-square fa-1x" aria-hidden="true"></i> 7411505030 (Call Now)</a><br />
+                <a href="tel:9886634526"><i class="fa fa-phone-square fa-1x" aria-hidden="true"></i> 9886634526</a>
+              </dd>
+            </dl>
+            <dl class="contact-list">
+              <dt>email:</dt>
+              <dd><a href="mailto:sstouristtmk@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i> sstouristtmk@gmail.com</a></dd>
+            </dl>
+          </div>
+          <div class="col-md-4 col-xl-3">
+            <dl class="contact-list">
+              <h5>Links</h5>
+              <dd>
+                <a href="tel:7411505030"><i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i> Whats App: 7411505030</a>
+              </dd>
+            </dl>
+            <dl class="contact-list">
+                <dd>
+                  <a href="https://www.instagram.com/sstourist_transport_contractor/"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i> Instagram</a>
+                </dd>
+              </dl>
+            <dl class="contact-list">
+              <dd>
+                <a
+                  href="https://www.facebook.com/102137065768569/posts/102142215768054/"
+                  ><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></i
+                  > facebook</a
+                >
+              </dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p style="text-align: center; font-family: Kalam-Regular;">
+          Design &amp; Develop by
+          <a
+            href="https://mohanganesh-tech.github.io/MyPortfolio/"
+            target="_blank"
+            style="text-decoration: none"
+            ><span style="color: rgb(224, 122, 20);"><i>Ganesh</i></span></a></span>
+        </p>
+      </div><br/>
+    </footer>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
